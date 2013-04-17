@@ -1,0 +1,6 @@
+A modules for installing and configuring postfix on Debian like servers.
+
+Some of the code is inspired on:
+https://github.com/camptocamp/puppet-postfix
+
+However it has since evolved quite a bit to suit our needs.
