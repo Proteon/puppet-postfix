@@ -22,14 +22,17 @@
 #
 # Copyright 2013 Proteon
 #
-# TODO: it would be more elegant to have a 'define postfix::alias' instead of this setup
+# TODO: it would be more elegant to have a 'define postfix::alias' instead of
+# this setup
 class postfix::aliases (
     $alias_map = $postfix::params::alias_map
 ) inherits postfix::params {
-    
-    # Warning, this symlink construction is not universally the same among several Debian distrubutions
+
+    # Warning, this symlink construction is not universally the same among
+    # several Debian distrubutions
     file { '/etc/aliases':
-        ensure  => '/etc/postfix/aliases',
+        ensure  => link,
+        target  => '/etc/postfix/aliases',
     }
 
     file { '/etc/postfix/aliases':

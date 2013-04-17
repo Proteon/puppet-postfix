@@ -28,7 +28,6 @@
 # === Copyright
 #
 # Copyright 2013 Proteon
-# TODO: replace top scope variables with parameters and set these in 
 class postfix (
     $ensure = 'present',
     $additional_mydestinations = [],
