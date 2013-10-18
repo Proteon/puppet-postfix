@@ -1,38 +1,18 @@
 {
   "name": "puppet-postfix",
+  "version": "0.1.0",
+  "summary": "Puppet module for postfix",
   "author": "Proteon",
   "description": "Puppet module for postfix",
-  "license": "Apache License, Version 2.0",
-  "project_page": "https://github.com/Proteon/puppet-postfix",
-  "source": "git://github.com/Proteon/puppet-postfix.git",
-  "summary": "Puppet module for postfix",
-  "version": "0.1.0",
-  "checksums": {
-    "Modulefile": "157c3354bbf8fc2dcdde17e85795fc4d",
-    "README": "0d87d85d2b453f72f690db0ba9250bf4",
-    "manifests/aliases.pp": "45e07a184dfdc6e0c98fe3791e5a949d",
-    "manifests/config.pp": "8842b279f8d4afa33eb27d6a11c2a035",
-    "manifests/hash.pp": "d44691fe759d1a6f496bd24cd080cfe7",
-    "manifests/init.pp": "6e288525ac7d2944e8108fb9e805f336",
-    "manifests/params.pp": "a761caf35c0f50b77f73a60ccbf2c28a",
-    "manifests/relay_domains.pp": "7e5ea2dec71dbd74674f8d9d14a23bf4",
-    "manifests/sender_access.pp": "70d672080510b7010d6c43334244e2d7",
-    "manifests/transport_maps.pp": "9d4cd1d035e48de55428a7370e105fa8",
-    "manifests/virtual_alias_maps.pp": "1ab6fcbf02005815c31d9d637fe5c170",
-    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
-    "templates/aliases.erb": "84fc12a3715dac61fdabfed2e50a773e",
-    "templates/main.cf.erb": "15868ec36f0ad1ba826fb7eb087f67cf",
-    "templates/master.cf.erb": "23e3dfc43bdca32f0e8872c3fcc08808",
-    "templates/relay_domains.erb": "b69c64bd608c625e9066b5224819b439",
-    "templates/sender_access.erb": "0670c30af20489a8cb80a623ea6aac5c",
-    "templates/transport_maps.erb": "b69c64bd608c625e9066b5224819b439",
-    "templates/virtual_alias_maps.erb": "0670c30af20489a8cb80a623ea6aac5c",
-    "tests/init.pp": "e0f4d8ba5bf459dfa02bd77a1295c57c"
-  },
   "dependencies": [
     {
       "name": "ripienaar/concat",
       "version_requirement": "\u003e\u003d0.2.0"
     }
-  ]
+  ],
+  "types": [],
+  "checksums": {},
+  "source": "git://github.com/Proteon/puppet-postfix.git",
+  "project_page": "https://github.com/Proteon/puppet-postfix",
+  "license": "Apache License, Version 2.0"
 }
