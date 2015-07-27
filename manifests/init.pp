@@ -30,6 +30,7 @@
 # Copyright 2013 Proteon
 class postfix (
     $ensure = 'present',
+    $myhostname = $fqdn,
     $additional_mydestinations = [],
 ) {
     include postfix::aliases
