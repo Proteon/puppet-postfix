@@ -36,7 +36,6 @@ define postfix::config (
     $config_file = '/etc/postfix/main.cf'
 
     concat::fragment {"postfix config ${name}":
-        ensure  => $ensure,
         target  => $config_file,
         content => "${name} = ${value}\n",
         order   => $order
