@@ -48,7 +48,7 @@ class postfix (
             ensure    => running,
             enable    => true,
             hasstatus => true,
-            restart   => '/etc/init.d/postfix reload',
+            restart   => '/etc/init.d/postfix restart',
             require   => Package['postfix'],
         }
 
