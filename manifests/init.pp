@@ -32,6 +32,7 @@ class postfix (
     $ensure = 'present',
     $myhostname = $fqdn,
     $additional_mydestinations = [],
+    $inet_protocols = 'all',  # set to 'ipv4' tp disable 'ipv6'
 ) {
     include postfix::aliases
     include postfix::params
@@ -86,6 +87,8 @@ class postfix (
                 value   => 'hash:/etc/aliases';
             'inet_interfaces':
                 value   => 'all';
+            'inet_protocols':
+                value  => $inet_protocols;
         }
     }
 }
