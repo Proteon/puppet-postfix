@@ -39,6 +39,7 @@ class postfix (
 
     $postfix_smtp_listen = $postfix::params::postfix_smtp_listen
     $postfix_mail_user = $postfix::params::postfix_mail_user
+    $tls_security_level = $postfix::params::tls_security_level
 
     package { 'postfix':
         ensure  => $ensure,

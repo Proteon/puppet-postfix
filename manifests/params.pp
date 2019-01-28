@@ -29,4 +29,5 @@ class postfix::params {
     }
     $postfix_smtp_listen = '0.0.0.0'
     $postfix_mail_user = 'vmail'
+    $tls_security_level = 'may'
 }
