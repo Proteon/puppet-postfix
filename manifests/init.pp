@@ -31,6 +31,7 @@
 class postfix (
     $ensure = 'present',
     $myhostname = $fqdn,
+    $myorigin = $fqdn,
     $additional_mydestinations = [],
     $inet_protocols = 'all',  # set to 'ipv4' tp disable 'ipv6'
 ) {
@@ -83,7 +84,7 @@ class postfix (
 
         postfix::config {
             'myorigin':
-                value   => $::fqdn;
+                value   => $myorigin;
             'alias_maps':
                 value   => 'hash:/etc/aliases';
             'inet_interfaces':
